@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class InventoryRetailStore implements IStore {
 
+    // Probably is unnecessary for the exercise !!!
     private double revenue;
     List<Product> inventory;
 
@@ -18,12 +19,13 @@ public class InventoryRetailStore implements IStore {
      * No argument constructor
      */
     public InventoryRetailStore(){
-        revenue = 0;
+        revenue = 0.0;
         inventory = new ArrayList<>();
     }
 
     /**
      * Only a starting revenue added in the construction
+     * @param revenue The available amount of money
      */
     public InventoryRetailStore(double revenue){
         this.revenue = revenue;
