@@ -47,6 +47,6 @@ public class InventoryRetailStore implements IStore {
 
     @Override
     public void reset() {
-        this.setInventory(new ArrayList<Product>());
+        this.getInventory().removeAll(getInventory());
     }
 }
